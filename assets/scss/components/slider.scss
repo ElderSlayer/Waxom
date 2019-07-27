@@ -1,0 +1,50 @@
+.slider {
+	background: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url("/Waxom/assets/img/slider-bcg.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.slogan {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	&__item {
+		width: 50%;
+		/*height: 260px;*/
+		margin: auto;
+		text-align: center;
+	}
+	&__title-1 {
+		color: #ffffff;
+		font-family: Raleway;
+		font-size: 36px;
+		margin-bottom: 25px;
+	}
+	&__title-2 {
+		color: #ffffff;
+		font-family: Raleway;
+		font-weight: bold;
+		font-size: 52px;
+		margin-bottom: 30px;
+	}
+	&__text {
+		color: #ffffff;
+		font-family: Montserrat;
+		font-size: 16px;
+		margin-bottom: 50px;
+	}
+	&__button {
+		margin: 0;
+		border: 0;
+		background: #998675;
+		width: calc(100% / 3);
+		height: 50px;
+		color: white;
+		font-family: Raleway;
+		font-weight: bold;
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+}

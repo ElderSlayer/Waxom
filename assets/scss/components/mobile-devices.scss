@@ -1,0 +1,41 @@
+.mobile-devices {
+	padding-top: 84px;
+	background-color: #fbfaf8;
+	&__block-img {
+		& IMG {
+			height: 100%;
+			width: 100%;
+		}
+	}
+	&__content {
+		padding-top: 120px;
+	}
+	&__text {
+		margin-bottom: 35px;
+	}
+	&__title {
+		color: #555555;
+		font-family: Raleway;
+		font-weight: bold;
+		font-size: 30px;
+		margin-bottom: 40px;
+	}
+	&__info {
+		color: #8c8c8c;
+		font-family: Montserrat;
+		font-size: 16px;
+	}
+	&__block-list {
+		margin-bottom: 35px;
+	}
+	&__list {
+		list-style: none;
+		padding: 0;
+	}
+	&__list-item {
+	}
+	&__icon {
+		float: left;
+		margin-right: 15px;
+	}
+}

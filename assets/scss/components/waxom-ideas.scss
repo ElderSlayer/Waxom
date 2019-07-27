@@ -1,0 +1,53 @@
+.waxom-ideas {
+	background-color: #fbfaf8;
+	padding-top: 80px;
+	&__content {
+		text-align: center;
+	}
+	&__title {
+		color: #555555;
+		font-family: Raleway;
+		font-weight: bold;
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+	&__info {
+		color: #8c8c8c;
+		font-family: Montserrat;
+		font-size: 16px;
+		margin-bottom: 40px;
+	}
+	&__item {
+		margin: 0 -15px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+	}
+	&__img-center {
+		width: calc(800% / 12);
+		z-index: 3;
+		& IMG {
+			width: 100%;
+		}
+	}
+	&__img-left {
+		width: calc(800% / 12);
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		z-index: 1;
+		& IMG {
+			width: 100%;
+		}
+	}
+	&__img-right {
+		width: calc(800% / 12);
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		z-index: 2;
+		& IMG {
+			width: 100%;
+		}
+	}
+}

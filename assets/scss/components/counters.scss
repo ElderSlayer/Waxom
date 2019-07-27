@@ -1,0 +1,30 @@
+.counter {
+	background-image: linear-gradient(90deg, #211b19, #4e3427);
+	background-repeat: no-repeat;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	&__block {
+		text-align: center;
+		& IMG {
+			margin-bottom: 30px;
+		}
+	}
+	&__title {
+		color: #ffffff;
+		font-family: Montserrat;
+		font-size: 48px;
+		margin-bottom: 20px;
+	}
+	&__info {
+		color: #c7b299;
+		font-family: Montserrat;
+		font-size: 14px;
+		text-transform: uppercase;
+		padding-bottom: 30px;
+		margin-bottom: 20px;
+		background-image: linear-gradient(#ffffff 100% , #ffffff 100%);
+		background-repeat: no-repeat;
+		background-size: calc(300% / 17) 3px;
+		background-position: bottom center;
+	}
+}

@@ -1,0 +1,129 @@
+.recent-posts {
+	padding: 80px 0;
+	&__item {
+		text-align: center;
+	}
+	&__title {
+		color: #555555;
+		font-family: Raleway;
+		font-weight: bold;
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+	&__info {
+		color: #8c8c8c;
+		font-family: Montserrat;
+		font-size: 16px;
+		margin-bottom: 40px;
+	}
+	&__post {
+		margin-bottom: 30px;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+	}
+	&__photo {
+		height: 220px;
+		& IMG {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__text {
+		padding: 20px;
+		border: 2px solid #f8f8f8;
+		border-top-style: none;
+	}
+	&__title-post {
+		color: #555555;
+		font-family: Raleway;
+		font-size: 20px;
+		margin-bottom: 25px;
+	}
+	&__info-post {
+		color: #8c8c8c;
+		font-family: Montserrat;
+		font-size: 14px;
+		margin-bottom: 30px;
+	}
+	&__read-more {
+		color: #c7b299;
+		font-family: Montserrat;
+		font-size: 14px;
+		text-decoration: none;
+		&:hover {
+			color: #c7b299;
+			text-decoration: none;
+		}
+	}
+	&__date {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+	}
+	&__day {
+		background-color: #363636;
+		/*width: 50px;
+		height: 35px;*/
+		border-radius: 3px 3px 0 0;
+		padding: 4px 12px;
+		text-align: center;
+	}
+	&__day-number {
+		color: #ffffff;
+		font-family: Montserrat;
+		font-size: 24px;
+		margin-bottom: 0;
+	}
+	&__month {
+		background-color: #252525;
+		/*width: 50px;
+		height: 25px;*/
+		border-radius: 0 0 3px 3px;
+		padding: 4px 12px;
+		text-align: center;
+	}
+	&__month-number {
+		color: #ffffff;
+		font-family: Roboto;
+		font-size: 12px;
+		margin-bottom: 0;
+	}
+	&__hover {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		opacity: 0;
+		transition: .3s ease all;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		&:hover {
+			opacity: 1;
+			transition: .3s ease all;
+		}
+	}
+	&__text-hover {
+		margin-bottom: 0;
+		margin-top: auto;
+		border: 2px solid #362f2d;
+		background-color: #362f2d;
+	}
+	&__title-post-hover {
+		color: #c7b299;
+	}
+	&__info-post-hover {
+		color: #ffffff;
+	}
+	&__day-hover {
+		background-color: #c7b299;
+	}
+	&__month-hover {
+		background-color: #a48d72;
+	}
+}

@@ -1,0 +1,11 @@
+.video-presentation {
+	width: 100%;
+	height: 700px;
+	background: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url("/Waxom/assets/img/video-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	&__video {
+		width: 100%;
+		height: 100%;
+	}
+}
