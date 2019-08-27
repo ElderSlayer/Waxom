@@ -43,6 +43,24 @@
 		display: flex;
 		flex-direction: column;
 		background-color: #fbfaf8;
+		&:hover {
+			.latest-project__hover {
+				opacity: 1;
+				transition: .3s ease all;
+			}
+			.latest-project__text-item {
+				background-color: #362f2d;
+				transition: .3s ease all;
+			}
+			.latest-project__project-title {
+				color: #ffffff;
+				transition: .3s ease all;
+			}
+			.latest-project__project-info{
+				color: #c7b299;
+				transition: .3s ease all;
+			}
+		}
 	}
 	&__img-item {
 		height: 240px;
@@ -69,28 +87,25 @@
 		margin-bottom: 0;
 	}
 	&__hover {
-		margin: 0 15px 30px 15px;
+		margin: 0 15px;
 		position: absolute;
+		height: 240px;
 		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
 		background-color: rgba(black, .5);
 		opacity: 0;
-		transition: .3s ease all;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		&:hover {
-			opacity: 1;
-			transition: .3s ease all;
-		}
 	}
 	&__hover-img {
-		margin-top: auto;
 		& IMG {
 			padding: 0 20px;
+			width: auto;
+			height: auto;
 		}
 	}
 	&__hover-item {
@@ -99,18 +114,6 @@
 		margin-top: auto;
 		background-color: #362f2d;
 		width: 100%;
-	}
-	&__hover-title {
-		color: #ffffff;
-		font-family: Raleway;
-		font-size: 20px;
-		margin-bottom: 15px;
-	}
-	&__hover-info {
-		color: #c7b299;
-		font-family: Montserrat;
-		font-size: 14px;
-		margin-bottom: 0;
 	}
 	&__button-end {
 		margin: 0;

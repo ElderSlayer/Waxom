@@ -1,7 +1,7 @@
 .slider {
-  background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%), url("/Waxom/assets/img/slider-bcg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%), url("/Waxom/assets/img/slider-bcg.jpg") center;
   background-size: cover;
-  background-position: center;
+  /*background-position: center;*/
   height: 100vh;
   display: flex;
   flex-direction: column; }
@@ -220,6 +220,18 @@
     display: flex;
     flex-direction: column;
     background-color: #fbfaf8; }
+    .latest-project__project:hover .latest-project__hover {
+      opacity: 1;
+      transition: .3s ease all; }
+    .latest-project__project:hover .latest-project__text-item {
+      background-color: #362f2d;
+      transition: .3s ease all; }
+    .latest-project__project:hover .latest-project__project-title {
+      color: #ffffff;
+      transition: .3s ease all; }
+    .latest-project__project:hover .latest-project__project-info {
+      color: #c7b299;
+      transition: .3s ease all; }
   .latest-project__img-item {
     height: 240px;
     background-color: #8c8c8c; }
@@ -240,42 +252,29 @@
     font-size: 14px;
     margin-bottom: 0; }
   .latest-project__hover {
-    margin: 0 15px 30px 15px;
+    margin: 0 15px;
     position: absolute;
+    height: 240px;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
-    transition: .3s ease all;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column; }
-    .latest-project__hover:hover {
-      opacity: 1;
-      transition: .3s ease all; }
-  .latest-project__hover-img {
-    margin-top: auto; }
-    .latest-project__hover-img IMG {
-      padding: 0 20px; }
+  .latest-project__hover-img IMG {
+    padding: 0 20px;
+    width: auto;
+    height: auto; }
   .latest-project__hover-item {
     padding: 20px;
     margin-bottom: 0;
     margin-top: auto;
     background-color: #362f2d;
     width: 100%; }
-  .latest-project__hover-title {
-    color: #ffffff;
-    font-family: Raleway;
-    font-size: 20px;
-    margin-bottom: 15px; }
-  .latest-project__hover-info {
-    color: #c7b299;
-    font-family: Montserrat;
-    font-size: 14px;
-    margin-bottom: 0; }
   .latest-project__button-end {
     margin: 0;
     background: #998675;
@@ -374,6 +373,25 @@
     display: flex;
     flex-direction: column;
     position: relative; }
+    .recent-posts__post:hover .recent-posts__hover {
+      opacity: 1;
+      transition: .3s ease all; }
+    .recent-posts__post:hover .recent-posts__text {
+      border: 2px solid #362f2d;
+      background-color: #362f2d;
+      transition: .3s ease all; }
+    .recent-posts__post:hover .recent-posts__title-post {
+      color: #c7b299;
+      transition: .3s ease all; }
+    .recent-posts__post:hover .recent-posts__info-post {
+      color: #ffffff;
+      transition: .3s ease all; }
+    .recent-posts__post:hover .recent-posts__day {
+      background-color: #c7b299;
+      transition: .3s ease all; }
+    .recent-posts__post:hover .recent-posts__month {
+      background-color: #a48d72;
+      transition: .3s ease all; }
   .recent-posts__photo {
     height: 220px; }
     .recent-posts__photo IMG {
@@ -431,6 +449,7 @@
     font-size: 12px;
     margin-bottom: 0; }
   .recent-posts__hover {
+    height: 220px;
     position: absolute;
     top: 0;
     left: 0;
@@ -443,22 +462,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column; }
-    .recent-posts__hover:hover {
-      opacity: 1;
-      transition: .3s ease all; }
-  .recent-posts__text-hover {
-    margin-bottom: 0;
-    margin-top: auto;
-    border: 2px solid #362f2d;
-    background-color: #362f2d; }
-  .recent-posts__title-post-hover {
-    color: #c7b299; }
-  .recent-posts__info-post-hover {
-    color: #ffffff; }
-  .recent-posts__day-hover {
-    background-color: #c7b299; }
-  .recent-posts__month-hover {
-    background-color: #a48d72; }
 
 .partners {
   background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%), url("/Waxom/assets/img/partners-bg.jpg");
